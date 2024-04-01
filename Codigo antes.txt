@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Multiverso</title>
+</head>
+<body>
+    <header>
+    <h1 class="multiverso">Multiverso</h1>
+     <p class="Texto1">Fazendo um Texte</p>
+    
+    </header>
+    <div class="imagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+    </div>
+       <div class="jujutsu-P">
+           <h3 class="jujutsu">Jujutsu Kaisen</h3>
+           <h3 class="jujutsu">Jujutsu Kaisen</h3>
+           <h3 class="jujutsu">Jujutsu Kaisen</h3>
+    </div> 
+
+    
+</body>
+</html>
