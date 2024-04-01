@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Multiverso</title>
+</head>
+<body>
+    <header>
+        <h1 class="multiverso">Multiverso</h1>
+        <nav>
+            <a href="#">Filmes</a>
+            <a href="#">Séries</a>
+            <a href="#">Jogos</a>
+            <a href="#">Quadrinhos</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Ciência</a>
+        </nav>
+        <button class="mobile-nav">Menu</button> <!-- botão do menu mobile -->
+    </header>
+    <div class="imagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+        <img src="img/Jujutsu.jpg" alt="Personagem">
+    </div>
+    <div class="jujutsu-P">
+        <h3 class="jujutsu">Jujutsu Kaisen</h3>
+        <h3 class="jujutsu">Jujutsu Kaisen</h3>
+        <h3 class="jujutsu">Jujutsu Kaisen</h3>
+    </div> 
+
+    <script>
+        // Adiciona uma ação ao botão do menu mobile para alternar a exibição do menu
+        const mobileNavButton = document.querySelector('.mobile-nav');
+        const mobileNavMenu = document.querySelector('.menu-mobile');
+
+        mobileNavButton.addEventListener('click', () => {
+            mobileNavMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
