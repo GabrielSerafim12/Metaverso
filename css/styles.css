@@ -4,8 +4,9 @@ body {
 }
 header {
     background-color: #333;
-    color: white;
+    color: rgb(243, 233, 233);
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
@@ -26,18 +27,69 @@ nav a:hover {
     margin: 0;
     padding: 40px;
 }
+
 .mobile-nav {
-    display: none; /* oculta o menu mobile por padrão */
+        background-color: #007bff; /* Cor de fundo azul */
+        display: none;
+        color: #fff; /* Cor do texto branco */
+        padding: 10px 20px; /* Espaçamento interno */
+        border: none; /* Sem borda */
+        border-radius: 5px; /* Borda arredondada */
+        cursor: pointer; /* Cursor ao passar */
+        font-size: 16px; /* Tamanho da fonte */
+        transition: background-color 0.3s; /* Transição suave da cor de fundo */
 }
-.imagem {
-    text-align: center; /* centraliza as imagens */
-    margin-top: 20px;
+
+.mobile-nav:hover {
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
-.imagem img {
-    width: 400px; /* define o tamanho das imagens */
-    margin-bottom: 10px; /* espaço entre as imagens */
+
+.container {
+    display: flex; /* Joga uma coisa do lado dá outra */
+    gap: 10px; /* espaço entre as imagens */
+    text-align: center; /* alinha o texto no centro */
+    flex-wrap: wrap; /* Joga a Imagem pra baixo quando atinge 100% da tela */
+    padding: 10px; /* define uma a distância entre o conteúdo */
+    background: rgb(94, 86, 86); /* Cor de fundo */
+    justify-content: center; /* é usada para alinhar os elementos ao longo do eixo principal */
 }
-.jujutsu-P {
-    text-align: center; /* centraliza o texto */
-    gap: 20px; /* Dá um espaçamento */
+
+.container img {
+    width: 380px;
+}
+
+.container p {
+    color: white;
+}
+
+.chatbot {
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(121,12,9,0.8127626050420168) 35%, rgba(255,0,176,1) 100%);
+    border: 1px solid #333;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.chatbot:hover {
+    background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(121,12,9,0.8127626050420168) 35%, rgba(255,0,176,1) 100%);
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container img{
+       width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container img{
+       width: 100%;
+    }
 }
