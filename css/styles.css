@@ -33,6 +33,8 @@ nav a:hover {
     padding: 40px;
 }
 
+
+
 .mobile-nav {
         background-color: #007bff; /* Cor de fundo azul */
         display: none;
@@ -81,7 +83,7 @@ nav a:hover {
 .container .card div {
     width: 380px;
     height: 380px;
-    background: url(../img/Dragon\ Ball.jpg); /* Imagem de fundo */
+    /* background: url(../img/Dragon\ Ball.jpg); */ /* Imagem de fundo */
     background-position: center; /* Posição da imagem de fundo(center) */
     background-repeat: no-repeat; /* Imagem de fundo(Não repita) */
     background-size: cover; /* tamanho da imagem de fundo (cover) */
@@ -160,3 +162,174 @@ nav a:hover {
        width: 100%;
     }
 }
+
+
+
+/* .header-container {
+    position: relative;
+    height: 150px;
+}
+
+.multiverso {
+    margin: 0;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.cube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+
+.cube div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, #00ce00);
+    transform: rotateY( calc(90deg * var(--i))) translateZ(75px);
+    font-size: 12px;
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px);
+}
+
+.top::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background: #0f0;
+    transform: translateZ(-255px);
+    filter: blur(10px);
+    box-shadow: 0 0 60px rgba(0, 255, 0, 0.2);
+} */
+
+.cube {
+    position: relative;
+    width: 150px; 
+    height: 150px; 
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, #00ce00);
+    transform: rotateY( calc(90deg * var(--i))) translateZ(75px); /* Adjusted Z-translation */
+    font-size: 12px; /* Reduced font size */
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px; /* Reduced width */
+    height: 30px; /* Reduced height */
+    background: #222;
+    transform: rotateX(90deg) translateZ(75px); /* Adjusted Z-translation */
+}
+
+.top::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px; /* Reduced width */
+    height: 150px; /* Reduced height */
+    background: #0f0;
+    transform: translateZ(-255px); /* Adjusted Z-translation */
+    filter: blur(10px); /* Reduced blur */
+    box-shadow: 0 0 60px rgba(0, 255, 0, 0.2); /* Adjusted box-shadow */
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
