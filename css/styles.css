@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,13 +21,15 @@ nav {
     text-align: center;
 }
 nav a {
+    position: relative;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 6px 10px;
 }
 nav a:hover {
     background-color: #666;
 }
+
 
 .multiverso {
     margin: 0;
@@ -88,7 +91,27 @@ nav a:hover {
     background-repeat: no-repeat; /* Imagem de fundo(Não repita) */
     background-size: cover; /* tamanho da imagem de fundo (cover) */
     transition: .3s;
+}
 
+.container .card:nth-child(1) {
+    animation: teste 1.5s ease-in-out;
+}
+.container .card:nth-child(2) {
+    animation: teste 1.2s ease-in-out;
+}
+.container .card:nth-child(3) {
+    animation: teste 1s ease-in-out;
+}
+
+
+@keyframes teste {
+    from {
+        transform: translate(-100vw);
+    }
+
+    to {
+        transform: translate(0);
+    }
 }
 
 /* Estilizando o content */
@@ -104,12 +127,6 @@ nav a:hover {
     opacity: 1;
 }
 
-.container .card div:hover {
-    background: url(../img/Goku.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .container .card p {
     font-weight: 600;
@@ -150,7 +167,7 @@ nav a:hover {
     border-radius: 40px;
 }
 
-            /* Media Query são recursos que podem ser utilizados para que os estilos mudem de acordo com o tamanho da tela */
+    /* Media Query são recursos que podem ser utilizados para que os estilos mudem de acordo com o tamanho da tela */
 @media screen and (max-width: 1000px) {
     .container img{
        width: 300px;
@@ -300,36 +317,4 @@ nav a:hover {
     transform: translateZ(-255px); /* Adjusted Z-translation */
     filter: blur(10px); /* Reduced blur */
     box-shadow: 0 0 60px rgba(0, 255, 0, 0.2); /* Adjusted box-shadow */
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
