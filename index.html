@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="js/mobile-nav.js"></script>
     <title>Multiverso</title>
 </head>
 <body>
@@ -20,21 +21,22 @@
             </div>
             <h1 class="multiverso">MULTiVERSO</h1>
         </div>
-        <nav>  
-            <button class="mobile-nav">Menu</button> <!-- botão do menu mobile -->
-            <a href="#">Filmes</a>
-            <a href="#">Séries</a>
-            <a href="#">Jogos</a>
-            <a href="#">Quadrinhos</a>
-            <a href="#">Tecnologia</a>
-            <a href="#">Ciência</a>
-        </nav>
+        <nav class="nav">
+            <button class="hamburger"></button>
+            <ul class="nav-list">
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+                <a href="#">Jogos</a>
+                <a href="#">Quadrinhos</a>
+                <a href="#">Tecnologia</a>
+                <a href="#">Ciência</a>
+            </ul>
+          </nav>
     </header>
     <div class="container">
         <div class="card">
             <div>
                 <img src="img/Tanjiro.jpg" alt="">
-               <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem reiciendis laboriosam culpa cum maiores fugit ex vero fuga quae a! Accusantium eveniet aut ipsum recusandae dicta harum quis maiores cum!</p>
             </div>
             <p>Tanjiro</p>
         </div>
@@ -72,13 +74,21 @@
         <div class="chatbot"></div>
 
     <script>
-        // Adiciona uma ação ao botão do menu mobile para alternar a exibição do menu
-        const mobileNavButton = document.querySelector('.mobile-nav');
-        const mobileNavMenu = document.querySelector('.menu-mobile');
+        // Select the mobile-nav button
+const mobileNavBtn = document.getElementById('mobile-nav-btn');
 
-        mobileNavButton.addEventListener('click', () => {
-            mobileNavMenu.classList.toggle('show');
-        });
+// Select all the nav links
+const navLinks = document.querySelectorAll('nav a');
+
+// Create a function to toggle the 'active' class on the nav links
+const toggleNavLinks = () => {
+    navLinks.forEach(link => {
+        link.classList.toggle('active');
+    });
+};
+
+// Add a click event listener to the mobile-nav button
+mobileNavBtn.addEventListener('click', toggleNavLinks);
     </script>
 </body>
 </html>
