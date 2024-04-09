@@ -139,7 +139,6 @@ header {
 
 @media (max-width: 600px) {
     nav a {
-        display: none;
     }
     .mobile-nav {
         display: block;
