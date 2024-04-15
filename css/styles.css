@@ -21,7 +21,6 @@ header {
     margin-inline: auto;
     align-items: center;
   }
-
   
   .nav-list {
     display: flex;
@@ -37,7 +36,6 @@ header {
     padding-block: 16px;
     text-decoration: none;
   }
-  
   
   .hamburger {
     display: none;
@@ -138,19 +136,15 @@ header {
 }
 
 @media (max-width: 600px) {
-    nav a {
-    }
     .mobile-nav {
         display: block;
     }
 }
 
-
 .multiverso {
     margin: 0;
     padding: 40px;
 }
-
 
 .mobile-nav {
         background-color: #007bff; /* Cor de fundo azul */
@@ -200,7 +194,6 @@ header {
 .container .card div {
     width: 380px;
     height: 380px;
-    /* background: url(../img/Dragon\ Ball.jpg); */ /* Imagem de fundo */
     background-position: center; /* Posição da imagem de fundo(center) */
     background-repeat: no-repeat; /* Imagem de fundo(Não repita) */
     background-size: cover; /* tamanho da imagem de fundo (cover) */
@@ -216,7 +209,6 @@ header {
 .container .card:nth-child(3) {
     animation: teste 1s ease-in-out;
 }
-
 
 @keyframes teste {
     from {
@@ -256,12 +248,6 @@ header {
     color: rgb(57, 145, 245);
 }
 
-
-.container p {
-    color: rgb(255, 255, 255);
-}
-
-
 .header-container {
     position: relative;
     height: 150px;
@@ -294,46 +280,4 @@ header {
     100%{
         transform: rotateX(-30deg) rotateY(360deg);
     }
-}
-
-.cube div {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-}
-
-.cube div span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#151515, #00ce00);
-    transform: rotateY( calc(90deg * var(--i))) translateZ(75px);
-    font-size: 12px;
-}
-
-.top{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background: #222;
-    transform: rotateX(90deg) translateZ(75px);
-}
-
-.top::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background: #0f0;
-    transform: translateZ(-255px);
-    filter: blur(10px);
-    box-shadow: 0 0 60px rgba(0, 255, 0, 0.2);
 }
